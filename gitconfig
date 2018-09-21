@@ -1,0 +1,9 @@
+[alias]
+	co = checkout
+	ci = commit -m
+	st = status
+	br = branch
+	rup = remote update --prune
+	p = pull
+[push]
+	default = simple
