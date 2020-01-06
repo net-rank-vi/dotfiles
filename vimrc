@@ -34,6 +34,9 @@ Plugin 'ervandew/supertab'
 " Auto-indenting for python
 Plugin 'hynek/vim-python-pep8-indent'
 
+" Syntax highlighting for apib extensions
+Plugin 'kylef/apiblueprint.vim'
+
 " All plugins need to be listed before this line
 call vundle#end()
 
@@ -67,6 +70,7 @@ autocmd FileType javascript setlocal ts=2 sts=2 sw=2
 autocmd FileType python setlocal ts=4 sts=4 sw=4
 autocmd FileType yaml setlocal ts=4 sts=4 sw=4
 autocmd FileType java setlocal ts=4 sts=4 sw=4
+autocmd FileType html setlocal ts=2 sts=2 sw=2
 
 " Uses supertab to autocomplete based on file type
 autocmd FileType python set omnifunc=pythoncomplete#Complete
@@ -74,6 +78,7 @@ autocmd FileType javascript set omnifunc=javascriptcomplete#CompleteJS
 autocmd FileType html set omnifunc=htmlcomplete#CompleteTags
 autocmd FileType css set omnifunc=csscomplete#CompleteCSS
 au BufNewFile,BufRead *.mako set filetype=html
+au BufNewFile,BufRead *.hbs set filetype=html
 
 " Supertab settings
 imap <tab> <C-Space>
